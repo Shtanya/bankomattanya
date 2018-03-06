@@ -22,18 +22,13 @@ border: 0 none; }
 </style>
 </head>
 <body>
-<h1>Register here!</h1>
-<p>Fill in your name and 
-email address, then click <strong>Submit</strong> 
-to register.</p>
+<h1>Выбор операции (снятие наличных)</h1>
 <form method="post" action="index.php1" 
 enctype="multipart/form-data" >
-      Name  <input type="text" 
-name="name" id="name"/></br>
-      Email <input type="text" 
-name="email" id="email"/></br>
-      <input type="submit" 
-name="submit" value="Submit" />
+     Ввод нужной суммы <input type="text" 
+name="Ввод нужной суммы " id="Ввод нужной суммы "/></br>
+<input type="submit" 
+name="Подтвердить" value="Подтвердить" />
 </form>
 <?php
 
