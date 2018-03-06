@@ -23,7 +23,7 @@ border: 0 none; }
 </head>
 <body>
 <h1>Выбор операции(снятие наличных)</h1>
-<form method="post" action="index.php1" 
+<form method="post" action="1.php" 
 enctype="multipart/form-data" >
     Ввод нужной суммы  <input type="text" 
 name="Ввод нужной суммы" id="Ввод нужной суммы"/></br>
