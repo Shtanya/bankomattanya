@@ -23,9 +23,7 @@ border: 0 none; }
 </head>
 <body>
 <h1>Система банкомата</h1>
-<p>Fill in your name and 
-email address, then click <strong>Submit</strong> 
-to register.</p>
+<p>Введите Пин-код,далее пройдет авторизация,выбрать операцию,снять наличные,затем нажать<strong>Забрать карту</strong> </p>
 <form method="post" action="index.php" 
 enctype="multipart/form-data" >
      Пин-код  <input type="text" 
