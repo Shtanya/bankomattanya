@@ -28,7 +28,7 @@ border: 0 none; }
 enctype="multipart/form-data" >
      Пин-код  <input type="text" 
 name="Пин-код" id="Пин-код"/></br>
-     Автризация <input type="text" 
+     Авторизация <input type="text" 
 name="Авторизация" id="Авторизация"/></br>
     Выбор операции(снять наличные)  <input type="text" 
 name="Выбор операции(снять наличные)" id="Выбор операции(снять наличные)"/></br>
