@@ -22,15 +22,21 @@ border: 0 none; }
 </style>
 </head>
 <body>
-<h1>Выбор операции(снятие наличных)</h1>
+<h1>Выбор операции "Выдача наличных"</h1>
+<p>Введите нужную сумму и нажмите <strong>Потдвердить</strong> </p>
 <form method="post" action="1.php" 
 enctype="multipart/form-data" >
-    Ввод нужной суммы  <input type="text" 
-name="Ввод нужной суммы" id="Ввод нужной суммы"/></br>
-     <input type="submit" 
+<select name="vibor summi">
+<option value="100">100
+<option value="500">500
+<option value="1000">1000
+<option value="5000">5000
+</select>
+<input type="submit" name="submit" value="Подтвердить">
+   <input type="submit" 
 name="Подтвердить" value="Подтвердить" />
 </form>
-<?php 
+<?php
 
 
 ?>
