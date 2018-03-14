@@ -1,27 +1,5 @@
 <html>
 <head>
-<meta http-equiv='Content-Type' content='text/html; charset=utf8'>
-<link rel="stylesheet" href="basic.css" type="text/css" />
-<title>Онлайн инструменты - tools.sergey-oganesyan.ru</title>
-</head>
-<body>
-
-	<div id="wrapper">
-		
-		<div id="header"></div>
-
-		<div id="center_wrap">
-
-			<div id="one_column"></div>
-			<div id="two_column"></div>
-	
-		</div>
-		
-		<div id="footer"></div>
-		
-	</div>
-	
-</body>
 </html>
 <Title>Registration Form</Title>
 <style type="text/css">
