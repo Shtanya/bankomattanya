@@ -22,15 +22,19 @@ border: 0 none; }
 </style>
 </head>
 <body>
-<h1>Выбор операции(снятие наличных)</h1>
-<form method="post" action="1.php" 
+<h1>Нужен чек?</h1>
+<form method="post" action="2.php" 
 enctype="multipart/form-data" >
-    Ввод нужной суммы  <input type="text" 
-name="Ввод нужной суммы" id="Ввод нужной суммы"/></br>
      <input type="submit" 
-name="Подтвердить" value="Подтвердить" />
+name="Да" value="Да" />
+     <input type="submit" 
+name="Нет" value="Нет" />
 </form>
-<?php 
+<?php
+
+
 ?>
 </body>
 </html>
+
+
