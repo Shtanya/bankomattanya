@@ -23,7 +23,7 @@ border: 0 none; }
 </head>
 <body>
 <h1>Желаете ли вы выполнить еще одну операцию?</h1>
-<form method="post" action="index.php" 
+<form method="post" action="3.php" 
 enctype="multipart/form-data" >
      <input type="submit" 
 name="Нет" value="Нет" />
