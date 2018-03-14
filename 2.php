@@ -22,7 +22,7 @@ border: 0 none; }
 </style>
 </head>
 <body>
-<h1>Нужен чек?</h1>
+<h1>Нужен ли вам чек?</h1>
 <form method="post" action="2.php" 
 enctype="multipart/form-data" >
      <input type="submit" 
