@@ -23,7 +23,7 @@ border: 0 none; }
 </head>
 <body>
 <h1>Выбор операции "Выдача наличных"</h1>
-<p>Выберите нужную сумму и нажмите <strong>Потдвердить</strong> если нет такой суммы в банкомате, то нажмите <strong>Другая сумма</strong></p>
+<p>Выберите нужную сумму и нажмите <strong>Подтвердить</strong> если нет такой суммы в банкомате, то нажмите <strong>Другая сумма</strong></p>
 <form method="post" action="1.php" 
 enctype="multipart/form-data" >
 <select name="vibor summi">
