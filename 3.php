@@ -26,7 +26,7 @@ border: 0 none; }
 <form method="post" action="3.php" 
 enctype="multipart/form-data" >
      <input type="submit" 
-name="Нет" value="Нет" />
+name="Да" value="Да" />
   <input type="submit" 
 name="Забрать карту" value="Забрать карту" />
 </form>
