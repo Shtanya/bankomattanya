@@ -36,6 +36,8 @@ enctype="multipart/form-data" >
 name="Подтвердить" value="Подтвердить" />
  Другая сумма <input type="text" 
 name="Другая сумма" id="Другая сумма"/></br>
+    <input type="submit" 
+name="Выдать" value="Выдать" />
   </form>
 <?php
 
