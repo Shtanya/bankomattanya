@@ -24,13 +24,16 @@ border: 0 none; }
 </head>
 <body>
 <h1>Система банкомата</h1>
-<p>Необходимо ввести Пин-код и нажать на <strong>Авторизация</strong> </p>
+<p>Введите Пин-код,после набора нажмите  на <strong>Далее</strong> </p>
+<p>Для отказа от операции нажмите  <strong>Отмена</strong> </p>
 <form method="post" action="index.php" 
 enctype="multipart/form-data" >
     Пин-код  <input type="text" 
 name="Пин-код" id="Пин-код"/></br>
      <input type="submit" 
-name="Авторизация" value="Авторизация" />
+name="Далее" value="Далее" />
+ <input type="submit" 
+name="Отмена" value="Отмена" />   
 </form>
 <?php
 
