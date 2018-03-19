@@ -3,7 +3,7 @@
 <Title>Registration Form</Title>
 </head>
 <body style="color:Black; background-color:#66cc66"> 
-<img src='http://data.sberbank.ru/common/img/uploaded/banks/uploaded_szb/files/smi_sber_logo_vsegda_695.jpg'>
+<img class="irc_mi" src="https://smart-lab.ru/uploads/images/04/40/28/2017/12/11/692e91554f.jpg'>
 <h1>Выбор операции "Операции с наличными"</h1>
 <form method="post" action="1.php" 
 enctype="multipart/form-data" >
