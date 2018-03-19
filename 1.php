@@ -9,9 +9,10 @@
 enctype="multipart/form-data" >
 <input type="submit" 
 name="Запросить баланс" value="Запросить баланс" />
-Другая сумма <input type="text" 
-name="Другая сумма" id="Другая сумма"/></br> <input type="submit" 
-name="Выдать" value="Выдать" />
+<input type="submit" 
+name="На экране" value="На экране" />
+<input type="submit" 
+name="На чеке" value="На чеке" />
   </form>
 <?php
 
