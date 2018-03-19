@@ -6,7 +6,7 @@
 </head>
 <body>
 <h1>Желаете ли вы выполнить еще одну операцию?</h1>
-<form method="post" action="3.php" 
+<form method="post" action="4.php" 
 enctype="multipart/form-data" >
      <input type="submit" 
 name="Да" value="Да" />
