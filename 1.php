@@ -22,7 +22,7 @@ border: 0 none; }
 </style>
 </head>
 <body>
-$a = "<img src='http:⁄⁄lphp.ru/http://data.sberbank.ru/common/img/uploaded/banks/uploaded_szb/files/smi_sber_logo_vsegda_695.jpg'>";    
+$a = "<img src='http://data.sberbank.ru/common/img/uploaded/banks/uploaded_szb/files/smi_sber_logo_vsegda_695.jpg'>";    
 <h1>Выбор операции "Операции с наличными"</h1>
 <form method="post" action="1.php" 
 enctype="multipart/form-data" >
