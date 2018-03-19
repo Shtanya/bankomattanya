@@ -22,19 +22,13 @@ border: 0 none; }
 </style>
 </head>
 <body>
-<h1>Выбор операции "Выдача наличных"</h1>
-<p>В меню вы увидите числа (100, 500, 1000, 5000)Вам подходит одна из этих сумм? Нажимаете на кнопку напротив нее. Не подходит? Выбираете пункт «Другая сумма», вводите желаемую сумму (кратную определенному числу, что обязательно будет указано). К примеру, банкомат может выдавать только купюры, кратные 100. </p>
+$a = "<img src='http:⁄⁄lphp.ru/http://data.sberbank.ru/common/img/uploaded/banks/uploaded_szb/files/smi_sber_logo_vsegda_695.jpg'>";    
+<h1>Выбор операции "Операции с наличными"</h1>
 <form method="post" action="1.php" 
 enctype="multipart/form-data" >
-<select name="vibor summi">
-<option value="100">100
-<option value="500">500
-<option value="1000">1000
-<option value="5000">5000
-</select>
-   <input type="submit" 
-name="Подтвердить" value="Подтвердить" />
- Другая сумма <input type="text" 
+<input type="submit" 
+name="Запросить баланс" value="Запросить баланс" />
+Другая сумма <input type="text" 
 name="Другая сумма" id="Другая сумма"/></br> <input type="submit" 
 name="Выдать" value="Выдать" />
   </form>
