@@ -15,8 +15,6 @@ enctype="multipart/form-data" >
 <option value="1000">1000
 <option value="5000">5000
 </select>
-<input type="submit" 
-name="Подтвердить" value="Подтвердить" />
 Другая сумма <input type="text" 
 name="Другая сумма" id="Другая сумма"/></br> <input type="submit" 
 name="Выдать" value="Выдать" />
