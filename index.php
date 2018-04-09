@@ -1,11 +1,17 @@
 <html>
 <head>
+<meta charset="itf-8">
 </html>
 <Title>Registration Form</Title>
 <body style="color:Black; background-color:#66cc66"> 
 <img src='http://novostroiki-irkutsk.ru/images/logo_sberbank.png'>    
 </head>
 <body>
+ <form method="POST"> 
+<input type="submit" name="nazvanie_knopki" value="Далее" /> 
+</form> 
+</body> 
+</html> 
 <h1>Система банкомата</h1>
 Срок действия карты <input type="text" 
 name="Срок действия карты" id="Срок действия карты"/></br>
@@ -22,7 +28,10 @@ name="Далее" value="Далее" />
 name="Отмена" value="Отмена" />   
 </form>
 <?php
-
+if( isset( $_POST['nazvanie_knopki'] ) ) 
+{ 
+echo 'Кнопка нажата!'; 
+} 
 ?>
 </body>
 </html>
