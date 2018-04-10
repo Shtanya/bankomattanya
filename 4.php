@@ -10,7 +10,7 @@
 enctype="multipart/form-data" >
 <div class="header"> 
 <ol> 
-<li><a href="\1.php"> На главную</a></li> 
+<a href="\index.php"> На главную</a></li> 
 </ol> 
 </div>
  <form method="POST"> 
