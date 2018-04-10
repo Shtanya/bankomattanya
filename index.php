@@ -9,6 +9,8 @@
 </body> 
 </html> 
 <h1>Система банкомата</h1> 
+<form method="post" action="index.php" 
+enctype="multipart/form-data" >
 Срок действия карты <input type="text" 
 name="Срок действия карты" id="Срок действия карты"/></br>
 <FONT color="red">Когда карта просрочена,она блокируется,и денежные средства с нее получить нельзя.</FONT> 
@@ -19,6 +21,8 @@ enctype="multipart/form-data" >
 Пин-код  <input type="text" 
 name="Пин-код" id="Пин-код"/></br>
 <input class="dws-submit" type="submit" name="submit" value="Войти"> 
+<br>
+<input class="dws-submit" type="submit" name="submit" value="Отмена"> 
 <br> 
 <a href="\2.php">Регистрация</a>
 <div class="header"> 
