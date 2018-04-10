@@ -18,22 +18,19 @@ name="Срок действия карты" id="Срок действия кар
 enctype="multipart/form-data" >
 Пин-код  <input type="text" 
 name="Пин-код" id="Пин-код"/></br>
-<html> 
-<head> 
-<meta charset="itf-8"> 
-</head> 
-<body> 
-<form method="POST"> 
-<input type="submit" name="nazvanie_knopki" value="Далее" />
-<input type="submit" name="nazvanie_knopki" value="Отмена" /> 
- </form> 
-</body> 
-</html> 
+<input class="dws-submit" type="submit" name="submit" value="Войти"> 
+<br> 
+<a href="\sugnup.php">Регистрация</a>
+<div class="header"> 
+<ol> 
+<li><a href="\content.php"> Вход</a></li> 
+<li><a href="\sugnup.php"> Регистрация</a></li> 
+</ol> 
+</div>
+
 <?php
-if( isset( $_POST['nazvanie_knopki'] ) ) 
-{ 
-echo 'Кнопка нажата!'; 
-} 
+ 
+ 
 ?>
 </body>
 </html>
