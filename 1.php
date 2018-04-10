@@ -11,7 +11,7 @@ enctype="multipart/form-data" >
 <a href="\index.php">На главную</a> 
   </form>
   <form>
-<input type="button" value="Далее" onClick='location.href="3.php"'>
+<input type="button" value="Далее" onClick='location.href="2.php"'>
 </form>
 <?php
 
