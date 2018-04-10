@@ -28,7 +28,7 @@ enctype="multipart/form-data" >
 <input type="submit" name="nazvanie_knopki" value="Отмена" /> 
 <?php 
 try { 
-$conn = new PDO("sqlsrv:server = tcp:stanya.database.windows.net,1433; Database = tanya", "Tanya", "Nastyal4x78tm2p1")
+$conn = new PDO("sqlsrv:server = tcp:stanya.database.windows.net,1433; Database = stanya", "Tanya", "Nastyal4x78tm2p1")
 $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION); 
 	} 
 	$sql_insert = 
