@@ -1,14 +1,11 @@
 <html>
 <head>
-<meta charset="itf-8">
 </html>
 <Title>Registration Form</Title>
 <body style="color:Black; background-color:#66cc66"> 
 <img src='http://novostroiki-irkutsk.ru/images/logo_sberbank.png'>    
 </head>
-<body>
- <form method="POST"> 
-</form> 
+<body> 
 </body> 
 </html> 
 <h1>Система банкомата</h1>
@@ -19,11 +16,19 @@ name="Срок действия карты" id="Срок действия кар
 <p>Для отказа от операции нажмите  <strong>Отмена</strong> </p>
 <form method="post" action="index.php" 
 enctype="multipart/form-data" >
-    Пин-код  <input type="text" 
+Пин-код  <input type="text" 
 name="Пин-код" id="Пин-код"/></br>
+<html> 
+<head> 
+<meta charset="itf-8"> 
+</head> 
+<body> 
+<form method="POST"> 
 <input type="submit" name="nazvanie_knopki" value="Далее" />
-<input type="submit" name="nazvanie_knopki" value="Отмена" />  
-</form>
+<input type="submit" name="nazvanie_knopki" value="Отмена" /> 
+ </form> 
+</body> 
+</html> 
 <?php
 if( isset( $_POST['nazvanie_knopki'] ) ) 
 { 
