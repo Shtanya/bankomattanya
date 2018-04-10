@@ -20,6 +20,11 @@ Symma varchar(30) NOT NULL,
 Nomer karti varchar(30) NOT NULL AUTO_INCREMENT, 
 PRIMARY KEY (Nomer karti) 
 )"; 
-mysql_query($sql) or die(mysql_error());
-mysql_close();
-print '<p>Data Base created!</p>';
+$conn->query($sql); 
+} 
+catch (PDOException $e) { 
+print("Error connecting to SQL Server."); 
+die(print_r($e)); 
+} 
+echo"123"; 
+?>
