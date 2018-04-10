@@ -17,9 +17,9 @@ name="Срок действия карты" id="Срок действия кар
 enctype="multipart/form-data" >
 Пин-код  <input type="text" 
 name="Пин-код" id="Пин-код"/></br>
-<br>
-<a href="\1.php"> class="button">Далее</a>
-</br>
+<form method="LINK" action="1.php">
+    <input type="submit" value="Войти">
+</form>
 <?php
 
 ?>
