@@ -9,8 +9,6 @@
 </body> 
 </html> 
 <h1>Система банкомата</h1> 
-<form method="post" action="index.php" 
-enctype="multipart/form-data" >
 Срок действия карты <input type="text" 
 name="Срок действия карты" id="Срок действия карты"/></br>
 <FONT color="red">Когда карта просрочена,она блокируется,и денежные средства с нее получить нельзя.</FONT> 
@@ -31,15 +29,11 @@ name="Пин-код" id="Пин-код"/></br>
 <li><a href="\2.php"> Регистрация</a></li> 
 </ol> 
 </div>
-
 <?php
  if( isset( $_POST['submit'] ) ) 
 { 
-
 <li><a href="\1.php">; 
 } 
-
- 
 ?>
 </body>
 </html>
