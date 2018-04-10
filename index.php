@@ -25,8 +25,8 @@ name="Пин-код" id="Пин-код"/></br>
 <a href="\2.php">Регистрация</a>
 <div class="header"> 
 <ol> 
-<li><a href="\1.php"> Вход</a></li> 
-<li><a href="\2.php"> Регистрация</a></li> 
+<li><a href="\1.php"> Войти </a></li> 
+<li><a href="\2.php"> Отмена </a></li> 
 </ol> 
 </div>
 <?php
