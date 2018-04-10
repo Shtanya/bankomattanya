@@ -22,10 +22,8 @@ name="Срок действия карты" id="Срок действия кар
 enctype="multipart/form-data" >
     Пин-код  <input type="text" 
 name="Пин-код" id="Пин-код"/></br>
-     <input type="submit" 
-name="Далее" value="Далее" />
- <input type="submit" 
-name="Отмена" value="Отмена" />   
+<input type="submit" name="nazvanie_knopki" value="Далее" />
+<input type="submit" name="nazvanie_knopki" value="Отмена" />  
 </form>
 <?php
 if( isset( $_POST['nazvanie_knopki'] ) ) 
