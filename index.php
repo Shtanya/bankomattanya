@@ -34,43 +34,19 @@ echo 'Вы отменили операцию!';
 ?>
 <?php 
 try { 
-$conn = new PDO("sqlsrv:server = tcp:juuksqlserver.database.windows.net,1433; Database = 
+$conn = new PDO("sqlsrv:server = tcp:stanya.database.windows.net,1433; Database = tanya", "Tanya", "Nastyal4x78tm2p1")
 $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION); 
 	} 
-	catch (PDOException $e) { 
-	print("Error connecting to SQL Server."); 
-	die(print_r($e)); 
-	} 
-	if(!empty($_POST)) { 
-	try { 
-	$balance = $_POST['balance']; 
-	$stock1 = $_POST['stock1'];
-	$stock2 = $_POST['stock2'];
-	$stock3 = $_POST['stock3'];
-	$stock4 = $_POST['stock'];
-	$buy1 = $_POST['buy1'];
-	$totalstock = 0; 
-	$totalstock = $stock1 + $stock2 + $stock3 + $stock4;
-	$x = ($stock1 * 164) + ($stock2 * 150) + ($stock3 * 78) + ($stock4 * 44);
-	$balance = 10000;
-	$stock1 = 164;
-	$stock2 = 150;
-	$stock3 = 78;
-	$stock4 = 44;
-		if( isset( $_POST['buy1'] ) )
-    {
-       
-        echo 'Кнопка нажата!';
 	$sql_insert = 
-	"INSERT INTO top123 (tireqty, oilqty, sparkqty, adress, name, phone) 
+	"INSERT INTO Karta (nomer karti, password, srok karti, balans, familiya, imya) 
 	VALUES (?,?,?,?,?,?)"; 
 	$stmt = $conn->prepare($sql_insert); 
-	$stmt->bindValue(1, $tireqty); 
-	$stmt->bindValue(2, $oilqty); 
-	$stmt->bindValue(3, $sparkqty);
-	$stmt->bindValue(4, $adress);
-	$stmt->bindValue(5, $name);
-	$stmt->bindValue(6, $phone);
+	$stmt->bindValue(1, $nomer karti); 
+	$stmt->bindValue(2, $password); 
+	$stmt->bindValue(3, $srok karti);
+	$stmt->bindValue(4, $balans);
+	$stmt->bindValue(5, $familiya);
+	$stmt->bindValue(6, $imya);
 	$stmt->execute();
 	 
 		
@@ -79,18 +55,18 @@ $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 	} 
 	echo "<h3>Your're registered!</h3>"; 
 	}
-	$sql_select = "SELECT * FROM top123"; 
+	$sql_select = "SELECT * FROM Karti"; 
 $stmt = $conn->query($sql_select); 
 $registrants = $stmt->fetchAll(); 
 if(count($registrants) > 0) { 
 echo "<h2>People who are registered:</h2>"; 
 echo "<table>"; 
-echo "<tr><th>tireqty</th>"; 
-echo "<th>oilqty</th>"; 
-echo "<th>sparkqty</th>";
-echo "<th>adress</th>";
-echo "<th>name</th>";
-echo "<th>phone</th></tr>";
+echo "<tr><th>nomer karti</th>"; 
+echo "<th>password</th>"; 
+echo "<th>srok karti</th>";
+echo "<th>balans</th>";
+echo "<th>familiya</th>";
+echo "<th>imya</th></tr>";
 foreach($registrants as $registrant) { 
 echo "<tr><td>".$registrant['tireqty']."</td>"; 
 echo "<td>".$registrant['oilqty']."</td>";
@@ -108,7 +84,5 @@ echo "<h3>No one is currently registered.</h3>";
 	?>
 	</body>
 </html> 
-?>
-</body>
-</html>
+
 
