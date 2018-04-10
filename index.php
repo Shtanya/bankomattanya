@@ -30,10 +30,7 @@ name="Пин-код" id="Пин-код"/></br>
 </ol> 
 </div>
 <?php
- if( isset( $_POST['submit'] ) ) 
-{ 
-<li><a href="\1.php">; 
-} 
+
 ?>
 </body>
 </html>
