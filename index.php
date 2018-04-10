@@ -5,8 +5,7 @@
 <body style="color:Black; background-color:#66cc66"> 
 <img src='http://novostroiki-irkutsk.ru/images/logo_sberbank.png'>    
 </head>
-<body> 
-</body> 
+<body>  
 </html> 
 <h1>Система банкомата</h1> 
 Срок действия карты <input type="text" 
@@ -22,11 +21,8 @@ name="Пин-код" id="Пин-код"/></br>
 <br>
 <input class="dws-submit" type="submit" name="submit" value="Отмена"> 
 <br> 
-<a href="\2.php">Регистрация</a>
-<div class="header"> 
 <ol> 
 <li><a href="\1.php"> Войти </a></li> 
-<li><a href="\2.php"> Отмена </a></li> 
 </ol> 
 </div>
 <?php
