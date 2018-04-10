@@ -12,16 +12,13 @@ enctype="multipart/form-data" >
 <div class="header">  
 <a href="\index.php"> На главную</a></li> 
 </div>
-<form method="POST"> 
-<input type="submit" name="nazvanie_knopki" value="Забрать карту" 
+<input type="submit" name="submit" value="Забрать карту"> 
 </form>
 <?php
-if( isset( $_POST['nazvanie_knopki'] ) ) 
+if (isset($_POST['submit']))
 { 
-
-echo 'Заберите карту!'; 
+echo "Заберите карту!"; 
 } 
-
 ?>
 </body>
 </html>
