@@ -35,7 +35,8 @@ $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 	print("Error connecting to SQL Server."); 
 	die(print_r($e)); 
 	} 
-	if(!empty($_POST)) { 
+	if(!empty($_POST)) {
+	try { 
 	$sql_insert = 
 	"INSERT INTO Karta (nomer karti, password, srok karti, balans, familiya, imya) 
 	VALUES (?,?,?,?,?,?)"; 
