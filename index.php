@@ -32,9 +32,7 @@ if( isset( $_POST['nazvanie_knopki'] ) )
 echo 'Вы отменили операцию!'; 
 } 
 ?>
-<?php
- 
-?> 
+
 </body>
 </html>
 
