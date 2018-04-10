@@ -21,13 +21,12 @@ name="Пин-код" id="Пин-код"/></br>
 <input type="button" value="Далее" onClick='location.href="1.php"'>
 </form>
 <div >
-<input type="button" value="Отмена" name="Отмена">
-<div class="Вы о">
-<div class="Вы отменили операцию">
-<!--тут должен появится текст и изображение загрузки-->
-</div> 
+<input type="submit" name="nazvanie_knopki" value="Отмена" /> 
 <?php
-
+if( isset( $_POST['nazvanie_knopki'] ) ) 
+{ 
+echo 'Вы отменили операцию!'; 
+}   
 ?>
 </body>
 </html>
