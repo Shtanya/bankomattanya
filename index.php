@@ -26,12 +26,6 @@ enctype="multipart/form-data" >
 </form>
 <form method="POST"> 
 <input type="submit" name="nazvanie_knopki" value="Отмена" /> 
-<?php
-if( isset( $_POST['nazvanie_knopki'] ) ) 
-{ 
-echo 'Вы отменили операцию!'; 
-} 
-?>
 <?php 
 try { 
 $conn = new PDO("sqlsrv:server = tcp:stanya.database.windows.net,1433; Database = tanya", "Tanya", "Nastyal4x78tm2p1")
