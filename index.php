@@ -21,12 +21,13 @@ name="Пин-код" id="Пин-код"/></br>
 <input type="button" value="Далее" onClick='location.href="1.php"'>
 </form>
 <div >
-<center><input type="button" value="Отмена" name="Отмена"></center>
+<input type="button" value="Отмена" name="Отмена">
 </div>
 <div class="tb">
 <div class="Вы отменили операцию">
 <!--тут должен появится текст и изображение загрузки-->
 </div>
+</div> 
 <?php
 
 ?>
