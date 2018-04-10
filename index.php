@@ -23,8 +23,8 @@ name="Пин-код" id="Пин-код"/></br>
 <a href="\sugnup.php">Регистрация</a>
 <div class="header"> 
 <ol> 
-<li><a href="\content.php"> Вход</a></li> 
-<li><a href="\sugnup.php"> Регистрация</a></li> 
+<li><a href="\1.php"> Вход</a></li> 
+<li><a href="\2.php"> Регистрация</a></li> 
 </ol> 
 </div>
 
