@@ -14,6 +14,9 @@ name="На экране" value="На экране" />
 <input type="submit" 
 name="На чеке" value="На чеке" />
   </form>
+  <form>
+<input type="button" value="Далее" onClick='location.href="3.php"'>
+</form>
 <?php
 
 
