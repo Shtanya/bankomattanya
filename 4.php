@@ -8,13 +8,20 @@
 <h1>Желаете ли вы выполнить еще одну операцию?</h1>
 <form method="post" action="4.php" 
 enctype="multipart/form-data" >
-     <input type="submit" 
-name="Да" value="Да" />
-  <input type="submit" 
-name="Забрать карту" value="Забрать карту" />
+<div class="header"> 
+<ol> 
+<li><a href="\1.php"> На главную</a></li> 
+</ol> 
+</div>
+ <form method="POST"> 
+<input type="submit" name="nazvanie_knopki" value="Забрать карту" 
 </form>
 <?php
+if( isset( $_POST['nazvanie_knopki'] ) ) 
+{ 
 
+echo 'Заберите карту!'; 
+} 
 
 ?>
 </body>
