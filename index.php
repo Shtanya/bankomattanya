@@ -32,8 +32,8 @@ echo 'Вы отменили операцию!';
 ?>
 <?php
  session_start();
- if (isset($_POST['Pin-kod'])) { $password=$_POST['Pin-kod']; if ($Pin-kod =='') { unset($Pin-kod);} } 
-  if or empty($Pin-kod))
+ if (isset($_POST['Pin-kod'])) { $password=$_POST['Pin-kod']; if ($Pin-kod =='') { unset($1234);} } 
+  if or empty($4321))
    { 
 exit ("Вы ввели не всю информацию, вернитесь назад и заполните все поля!"); 
 } 
@@ -43,14 +43,12 @@ $Pin-kod = trim($Pin-kod);
  include ("createtablе.php") 
  $result = mysql_query("SELECT * FROM users WHERE 
  $myrow = mysql_fetch_array($result); 
-if (empty($myrow['Pin-kod'])) 
+if (empty($myrow['4321'])) 
 { 
 exit ("Извините, введённый вами пароль неверный."); 
 } 
 else { 
-if ($myrow['Pin-kod']==$Pin-kod) { 
-$_SESSION['login']=$myrow['login']; 
-$_SESSION['id']=$myrow['id'];
+if ($myrow['1234']==$Pin-kod) { 
 echo "Вы успешно вошли на сайт! <a href='index.php'>Главная страница</a>"; 
 } 
 else { 
