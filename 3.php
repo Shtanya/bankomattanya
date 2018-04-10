@@ -8,8 +8,9 @@
 <h1>Нужен ли вам чек?</h1>
 <form method="post" action="3.php" 
 enctype="multipart/form-data" >
-<input type="submit" 
-name="Да" value="Да" />
+<form>
+<input type="button" value="Да" onClick='location.href="4.php"'>
+</form>
 <input type="submit" 
 name="Нет" value="Нет" />
 </form>
