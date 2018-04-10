@@ -22,11 +22,9 @@ name="Пин-код" id="Пин-код"/></br>
 </form>
 <div >
 <input type="button" value="Отмена" name="Отмена">
-</div>
-<div class="tb">
+<div class="Вы о">
 <div class="Вы отменили операцию">
 <!--тут должен появится текст и изображение загрузки-->
-</div>
 </div> 
 <?php
 
