@@ -42,18 +42,10 @@ $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 	$stmt->bindValue(5, $familiya);
 	$stmt->bindValue(6, $imya);
 	$stmt->execute();
-	 
-		
-	catch(Exception $e) { 
-	die(var_dump($e)); 
-	} 
-	echo "<h3>Your're registered!</h3>"; 
 	}
 	$sql_select = "SELECT * FROM Karti"; 
 $stmt = $conn->query($sql_select); 
 $registrants = $stmt->fetchAll(); 
-if(count($registrants) > 0) { 
-echo "<h2>People who are registered:</h2>"; 
 echo "<table>"; 
 echo "<tr><th>nomer karti</th>"; 
 echo "<th>password</th>"; 
@@ -72,9 +64,7 @@ echo "<td>".$registrant['name']."</td>";
 echo "<td>".$registrant['phone']."</td></tr>";
 } 
 echo "</table>"; 
-} else { 
-echo "<h3>No one is currently registered.</h3>"; 
-}
+ }
 	?>
 	</body>
 </html> 
