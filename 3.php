@@ -11,11 +11,11 @@ enctype="multipart/form-data" >
 <form>
 <input type="button" value="Да" onClick='location.href="4.php"'>
 </form>
-<input type="submit" 
-name="Нет" value="Нет" />
-</form>
+<input type="submit" name="submit" value="Нет"> 
 <?php
-
+if (isset($_POST['submit'])) { 
+echo "Заберите карту,и деньги!"; 
+}   
 ?>
 </body>
 </html>
