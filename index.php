@@ -17,8 +17,10 @@ name="Срок действия карты" id="Срок действия кар
 <p>Для отказа от операции нажмите  <strong>Отмена</strong> </p>
 <form method="post" action="index.php" 
 enctype="multipart/form-data" >
-Пин-код  <input type="text" 
-name="Пин-код" id="Пин-код"/></br>
+ <p>
+  <label>Ваш пароль:<br></label>
+    <input name="password" type="password" size="15" maxlength="15">
+    </p>
 <form>
 <input type="button" value="Далее" onClick='location.href="1.php"'>
 </form>
@@ -31,32 +33,7 @@ echo 'Вы отменили операцию!';
 } 
 ?>
 <?php
- session_start();
- if (isset($_POST['Pin-kod'])) { $password=$_POST['Pin-kod']; if ($Pin-kod =='') { unset($1234);} } 
-  if or empty($4321))
-   { 
-exit ("Вы ввели не всю информацию, вернитесь назад и заполните все поля!"); 
-} 
-$Pin-kod = stripslashes(Pin-kod); 
-$Pin-kod = htmlspecialchars($Pin-kod); 
-$Pin-kod = trim($Pin-kod); 
- include ("createtablе.php") 
- $result = mysql_query("SELECT * FROM users WHERE 
- $myrow = mysql_fetch_array($result); 
-if (empty($myrow['4321'])) 
-{ 
-exit ("Извините, введённый вами пароль неверный."); 
-} 
-else { 
-if ($myrow['1234']==$Pin-kod) { 
-echo "Вы успешно вошли на сайт! <a href='index.php'>Главная страница</a>"; 
-} 
-else { 
-//если пароли не сошлись 
-
-exit ("Извините, введённый вами login или пароль неверный."); 
-} 
-} 
+ 
 ?> 
 </body>
 </html>
