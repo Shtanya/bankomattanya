@@ -32,26 +32,26 @@ echo 'Вы отменили операцию!';
 ?>
 <?php
  session_start();
- if (isset($_POST['password'])) { $password=$_POST['password']; if ($password =='') { unset($password);} } 
-  if or empty($password))
+ if (isset($_POST['Pin-kod'])) { $password=$_POST['Pin-kod']; if ($Pin-kod =='') { unset($Pin-kod);} } 
+  if or empty($Pin-kod))
    { 
 exit ("Вы ввели не всю информацию, вернитесь назад и заполните все поля!"); 
 } 
-$password = stripslashes($password); 
-$password = htmlspecialchars($password); 
-$password = trim($password); 
- include ("creatable.php") 
+$Pin-kod = stripslashes(Pin-kod); 
+$Pin-kod = htmlspecialchars($Pin-kod); 
+$Pin-kod = trim($Pin-kod); 
+ include ("createtablе.php") 
  $result = mysql_query("SELECT * FROM users WHERE 
  $myrow = mysql_fetch_array($result); 
-if (empty($myrow['password'])) 
+if (empty($myrow['Pin-kod'])) 
 { 
-exit ("Извините, введённый вами login или пароль неверный."); 
+exit ("Извините, введённый вами пароль неверный."); 
 } 
 else { 
-if ($myrow['password']==$password) { 
+if ($myrow['Pin-kod']==$Pin-kod) { 
 $_SESSION['login']=$myrow['login']; 
 $_SESSION['id']=$myrow['id'];
-echo "Вы успешно вошли на сайт! <a href='index1.html'>Главная страница</a>"; 
+echo "Вы успешно вошли на сайт! <a href='index.php'>Главная страница</a>"; 
 } 
 else { 
 //если пароли не сошлись 
