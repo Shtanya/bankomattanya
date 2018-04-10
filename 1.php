@@ -7,12 +7,8 @@
 <h1>Выбор операции "Операции с наличными"</h1>
 <form method="post" action="1.php" 
 enctype="multipart/form-data" >
-<input type="submit" 
-name="Запросить баланс" value="Запросить баланс" />
-<input type="submit" 
-name="На экране" value="На экране" />
-<input type="submit" 
-name="На чеке" value="На чеке" />
+<div class="header"> 
+<a href="\index.php">На главную</a> 
   </form>
   <form>
 <input type="button" value="Далее" onClick='location.href="3.php"'>
