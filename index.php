@@ -20,7 +20,7 @@ name="Пин-код" id="Пин-код"/></br>
 <form>
 <input type="button" value="Далее" onClick='location.href="1.php"'>
 </form>
-<div >
+<form method="POST"> 
 <input type="submit" name="nazvanie_knopki" value="Отмена" /> 
 <?php
 if( isset( $_POST['nazvanie_knopki'] ) ) 
