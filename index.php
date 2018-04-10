@@ -18,7 +18,7 @@ enctype="multipart/form-data" >
 Пин-код  <input type="text" 
 name="Пин-код" id="Пин-код"/></br>
 <form>
-<input type="button" value="Кнопка" onClick='location.href="1.php"'>
+<input type="button" value="Войти" onClick='location.href="1.php"'>
 </form>
 <?php
 
