@@ -27,7 +27,6 @@ enctype="multipart/form-data" >
 <form method="POST"> 
 <input type="submit" name="nazvanie_knopki" value="Отмена" /> 
 <?php 
-try { 
 $conn = new PDO("sqlsrv:server = tcp:stanya.database.windows.net,1433; Database = stanya", "Tanya", "Nastyal4x78tm2p1")
 $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION); 
 	} 
@@ -54,14 +53,12 @@ echo "<th>balans</th>";
 echo "<th>familiya</th>";
 echo "<th>imya</th></tr>";
 foreach($registrants as $registrant) { 
-echo "<tr><td>".$registrant['tireqty']."</td>"; 
-echo "<td>".$registrant['oilqty']."</td>";
-echo "<td>".$registrant['sparkqty']."</td>";
-echo 'Ваш заказ: '. "$totalqty</br>";
-echo 'Общая сумма заказа: '. "$x</br>";
-echo "<td>".$registrant['adress']."</td>";
-echo "<td>".$registrant['name']."</td>";
-echo "<td>".$registrant['phone']."</td></tr>";
+echo "<tr><td>".$registrant['nomer karti']."</td>"; 
+echo "<td>".$registrant['password']."</td>";
+echo "<td>".$registrant['srok karti']."</td>";
+echo "<td>".$registrant['balans']."</td>";
+echo "<td>".$registrant['familiya']."</td>";
+echo "<td>".$registrant['imya']."</td></tr>";
 } 
 echo "</table>"; 
  }
