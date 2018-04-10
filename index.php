@@ -20,6 +20,10 @@ name="Пин-код" id="Пин-код"/></br>
 <input class="dws-submit" type="submit" name="submit" value="Войти"> 
 <br>
 <input class="dws-submit" type="submit" name="submit" value="Отмена"> 
+<button>
+  <img src="/images/icon.svg" title="Красная таблетка" alt="Иконка" />
+  <span style="color: red;">Красный</span> <span style="color: blue;">Синий</span>
+</button>
 <br> 
 <ol> 
 <li><a href="\1.php"> Войти </a></li> 
