@@ -18,8 +18,15 @@ enctype="multipart/form-data" >
 Пин-код  <input type="text" 
 name="Пин-код" id="Пин-код"/></br>
 <form>
-<input type="button" value="Войти" onClick='location.href="1.php"'>
+<input type="button" value="Далее" onClick='location.href="1.php"'>
 </form>
+<div >
+<center><input type="button" value="Отмена" name="Отмена"></center>
+</div>
+<div class="tb">
+<div class="Вы отменили операцию">
+<!--тут должен появится текст и изображение загрузки-->
+</div>
 <?php
 
 ?>
