@@ -20,7 +20,7 @@ enctype="multipart/form-data" >
 name="Пин-код" id="Пин-код"/></br>
 <input class="dws-submit" type="submit" name="submit" value="Войти"> 
 <br> 
-<a href="\sugnup.php">Регистрация</a>
+<a href="\2.php">Регистрация</a>
 <div class="header"> 
 <ol> 
 <li><a href="\1.php"> Вход</a></li> 
