@@ -7,7 +7,7 @@ $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 $sql = "CREATE TABLE Karta (
 id int(11) NOT NULL auto_increment,
 Nomer karti varchar(30) NOT NULL AUTO_INCREMENT, 
-Pin-kod varchar(30) NOT NULL AUTO_INCREMENT, 
+Password varchar(30) NOT NULL AUTO_INCREMENT, 
 Srok karti varchar(30) NOT NULL AUTO_INCREMENT, 
 Balans varchar(30) NOT NULL AUTO_INCREMENT, 
 Familiya varchar(30) NOT NULL AUTO_INCREMENT, 
