@@ -16,8 +16,10 @@ enctype="multipart/form-data" >
 <option value="5000">5000
 </select>
 Другая сумма <input type="text" 
-name="Другая сумма" id="Другая сумма"/></br> <input type="submit" 
-name="Выдать" value="Выдать" />
+name="Другая сумма" id="Другая сумма"/></br> 
+ <form>
+<input type="button" value="Выдать" onClick='location.href="3.php"'>
+</form>
 </form>
 <?php
 
