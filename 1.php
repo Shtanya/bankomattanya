@@ -7,6 +7,13 @@
 <h1>Выбор операции "Операции с наличными"</h1>
 <form method="post" action="1.php" 
 enctype="multipart/form-data" >
+  public void run() {
+            while (!isStopped) {
+                try {
+                    account.withdraw("100");             //снимаем со счета
+                } catch (NotEnoughMoneyException e) {
+                    System.out.println("Недостаточно денег");
+                }
 <input type="submit" 
 name="Запросить баланс" value="Запросить баланс" />
 <input type="submit" 
