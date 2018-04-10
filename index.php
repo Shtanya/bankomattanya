@@ -8,7 +8,6 @@
 </head>
 <body>
  <form method="POST"> 
-<input type="submit" name="nazvanie_knopki" value="Далее" /> 
 </form> 
 </body> 
 </html> 
