@@ -14,7 +14,7 @@ enctype="multipart/form-data" >
 </form>
 <input type="button" value="Далее" onClick='location.href="2.php"'>
 </form>
-<form>
+<form method="POST">
 <input type="submit" name="submit" value="На экране"> 
 </form>
 <?php
