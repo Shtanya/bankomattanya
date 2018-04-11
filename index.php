@@ -7,7 +7,8 @@
 <img src='http://novostroiki-irkutsk.ru/images/logo_sberbank.png'>    
 </head>
 <body>  
-<h1>Система банкомата</h1> 
+<h1>Система банкомата</h1>
+<form method="post" action="index.php"  
 Номер карты <input type="text" 
 name="Nomer karti" id="Nomer karti"/></br> 
 Срок действия карты <input type="text" 
@@ -15,8 +16,6 @@ name="srok karti" id="srok karti"/></br>
 <FONT color="red">Когда карта просрочена,она блокируется,и денежные средства с нее получить нельзя.</FONT> 
 <p>Введите пароль,после набора нажмите  на <strong>Продолжить</strong> </p>
 <p>Для отказа от операции нажмите  <strong>Отмена</strong> </p>
-<form method="post" action="index.php" 
-enctype="multipart/form-data" >
  <p>
   <label>Ваш пароль:<br></label>
     <input name="password" type="password" size="15" maxlength="15">
@@ -31,7 +30,7 @@ enctype="multipart/form-data" >
 </html> 
 <?php
 try {
-$conn = new PDO("sqlsrv:server = tcp:stanya.database.windows.net,1433; Database = bankomat", "Tanya","L4x78tm2p1");
+$conn = new PDO("sqlsrv:server = tcp:stanya.database.windows.net,1433; Database = master", "Tanya","L4x78tm2p1");
 $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 }
 catch (PDOException $e) {
