@@ -9,14 +9,14 @@
 <option value="Запросить баланс">Запросить баланс
 <option value="Получить наличные">Получить наличные
 </select>
-<form>
-<input type="submit" name="submit" value="На экране"> 
-</form>
 <form method="post" action="1.php" 
 enctype="multipart/form-data" >
 </form>
 <input type="button" value="Далее" onClick='location.href="2.php"'>
 </form>
+<form>
+<input type="submit" name="submit" value="На экране"> 
+</form>  
 <?php
 if (isset($_POST['submit']))
 { 
