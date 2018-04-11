@@ -47,4 +47,5 @@ $_SESSION['Nomer karti'] = $row["Nomer karti"];
 $_SESSION['Srok karti'] = $row["Srok karti"];
 $_SESSION['Password'] = $row["Password"]; 
 }
+}
 ?>
