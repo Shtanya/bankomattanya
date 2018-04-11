@@ -4,6 +4,10 @@
 </head>
 <body style="color:Black; background-color:#66cc66"> 
 <img src='http://novostroiki-irkutsk.ru/images/logo_sberbank.png'>
+<select name="vibor operacii">
+<option value="Запросить баланс">Запросить баланс
+<option value="Получить наличные">Получить наличные
+</select>
 <h1>Выбор операции "Операции с наличными"</h1>
 <form method="post" action="1.php" 
 enctype="multipart/form-data" >
