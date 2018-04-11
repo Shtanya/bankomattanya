@@ -18,8 +18,10 @@ enctype="multipart/form-data" >
 <input type="button" value="Далее" onClick='location.href="2.php"'>
 </form>
 <?php
-
-
+if (isset($_POST['submit']))
+{ 
+echo "Остаток на счете:100000 РУБ"; 
+}   
 ?>
 </body>
 </html>
