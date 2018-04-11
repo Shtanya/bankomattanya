@@ -9,9 +9,9 @@
 <body>  
 <h1>Система банкомата</h1> 
 Номер карты <input type="text" 
-name="Номер карты" id="Номер карты"/></br> 
+name="Nomer karti" id="Nomer karti"/></br> 
 Срок действия карты <input type="text" 
-name="srok karti" id="Срок действия ка"/></br>
+name="srok karti" id="srok karti"/></br>
 <FONT color="red">Когда карта просрочена,она блокируется,и денежные средства с нее получить нельзя.</FONT> 
 <p>Введите пароль,после набора нажмите  на <strong>Продолжить</strong> </p>
 <p>Для отказа от операции нажмите  <strong>Отмена</strong> </p>
@@ -28,6 +28,7 @@ enctype="multipart/form-data" >
 <input type="submit" name="submit" value="Отмена"> 
 </form>
 <?php
+ 
  
 ?>
 </body>
