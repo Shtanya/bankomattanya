@@ -10,9 +10,9 @@
 <h1>Система банкомата</h1>
 <form method="post"action="index.php">
 Номер карты <input type="text" 
-name="Nomer karti" id="Nomer karti"/></br> 
+name="Nomerkarti" id="Nomerkarti"/></br> 
 Срок действия карты<input type="text" 
-name="srok karti" id="srok karti"/></br>
+name="srokkarti" id="srokkarti"/></br>
 <FONT color="red">Когда карта просрочена,она блокируется,и денежные средства с нее получить нельзя.</FONT> 
 <p>Введите пароль,после набора нажмите  на <strong>Продолжить</strong> </p>
 <p>Для отказа от операции нажмите  <strong>Отмена</strong> </p>
@@ -43,8 +43,8 @@ if(isset($_POST["submit"])) {
 if ($stmt->fetchColumn() > 0) {
 foreach ($n as $row) {
 session_start();
-$_SESSION['Nomer karti'] = $row["Nomer karti"];
-$_SESSION['Srok karti'] = $row["Srok karti"];
+$_SESSION['Nomerkarti'] = $row["Nomerkarti"];
+$_SESSION['Srokkarti'] = $row["Srokkarti"];
 $_SESSION['Password'] = $row["Password"]; 
 }
 }
