@@ -8,9 +8,7 @@ id int(11) NOT NULL auto_increment,
 Nomer karti varchar(30) NOT NULL AUTO_INCREMENT, 
 Password varchar(30) NOT NULL AUTO_INCREMENT, 
 Srok karti varchar(30) NOT NULL AUTO_INCREMENT, 
-Balans varchar(30) NOT NULL AUTO_INCREMENT, 
-Familiya varchar(30) NOT NULL AUTO_INCREMENT, 
-Imya varchar(30) NOT NULL AUTO_INCREMENT, 
+Balans varchar(30) NOT NULL AUTO_INCREMENT,  
 PRIMARY KEY (id)
 ) ";
  $sql="CREATE TABLE Operacii (
