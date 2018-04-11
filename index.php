@@ -50,13 +50,15 @@ enctype="multipart/form-data" >
 <input type="submit" name="nazvanie_knopki" value="Отмена" /> 
 <?php
 	try {
-$conn = new PDO("sqlsrv:server = tcp:stanya.database.windows.net,1433; Database = stanya", "Tanya", "Nastyal4x78tm2p1");
+$conn = new PDO("sqlsrv:server = tcp:stanya.database.windows.net,1433; Database = tanya", "Tanya", "Nastyal4x78tm2p1");
 $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 }
 catch (PDOException $e) {
 print("Error connecting to SQL Server.");
 die(print_r($e));
 }
+if(!empty($_POST)) 
+{	
 try {  
 $stock1 = $_POST['stock1'];
 $stock2 = $_POST['stock2'];
@@ -65,8 +67,6 @@ $totalstock = 0;
 $buy1 = $_POST['buy1'];
 $totalstock = $stock1 + $stock2 + $stock3
 if( isset( $_POST['buy1'] ) )
-    {
-if(!empty($_POST)) {
 try {
 $sql_insert =
 "INSERT INTO Karta (nomer karti, password, srok karti)
