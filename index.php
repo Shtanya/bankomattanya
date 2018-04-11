@@ -35,6 +35,15 @@ catch (PDOException $e) {
 print("Error connecting to SQL Server.");
 die(print_r($e));
 }
+try {  
+$stock1 = $_POST['stock1'];
+$stock2 = $_POST['stock2'];
+$stock3 = $_POST['stock3'];
+$totalstock = 0;
+$buy1 = $_POST['buy1'];
+$totalstock = $stock1 + $stock2 + $stock3
+if( isset( $_POST['buy1'] ) )
+    {
 if(!empty($_POST)) {
 try {
 $sql_insert =
