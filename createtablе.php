@@ -5,10 +5,9 @@ $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 $sql = "CREATE TABLE Karta(
 id INT NOT NULL IDENTITY(1,1)
 PRIMARY KEY(id),
-Nomer karti varchar(30),
+Nomerkarti varchar(30),
 Password varchar(30),
-Srok karti INT,
-date DATE)";
+Srokkarti INT)";
 $conn->query($sql); 
   
 echo "<h3>Таблица создана!</h3>";
