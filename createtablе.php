@@ -9,7 +9,6 @@ Nomer karti varchar(30),
 Password varchar(30),
 Srok karti varchar(30),
 Balans varchar(30))";
-)";
 $sql = "CREATE TABLE Operacii (
 id INT NOT NULL IDENTITY(1,1)
 PRIMARY KEY (id),
