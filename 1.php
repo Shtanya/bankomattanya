@@ -14,8 +14,7 @@
 </form>
 <form method="post" action="1.php" 
 enctype="multipart/form-data" >
-  </form>
-  <form>
+</form>
 <input type="button" value="Далее" onClick='location.href="2.php"'>
 </form>
 
