@@ -8,7 +8,6 @@
 <option value="Запросить баланс">Запросить баланс
 <option value="Получить наличные">Получить наличные
 </select>
-<h1>Выбор операции "Операции с наличными"</h1>
 <form method="post" action="1.php" 
 enctype="multipart/form-data" >
   </form>
