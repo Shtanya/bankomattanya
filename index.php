@@ -50,6 +50,3 @@ $_SESSION['Password'] = $row["Password"];
 }
 } 
 ?>
- 
-
-
