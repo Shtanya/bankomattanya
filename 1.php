@@ -17,6 +17,7 @@ enctype="multipart/form-data" >
   <form>
 <input type="button" value="Далее" onClick='location.href="2.php"'>
 </form>
+
 <?php
 if (isset($_POST['submit']))
 { 
