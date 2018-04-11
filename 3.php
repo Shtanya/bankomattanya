@@ -1,6 +1,6 @@
 <html>
 <head>
-<Title>Registration Form</Title>
+<Title>Система банкомата</Title>
 <body style="color:Black; background-color:#66cc66"> 
 <img src='http://novostroiki-irkutsk.ru/images/logo_sberbank.png'>
 </head>
@@ -16,7 +16,7 @@ enctype="multipart/form-data" >
 <?php
 if (isset($_POST['submit']))
 { 
-echo "Заберите карту,и деньги!"; 
+echo "Пожалуйста,заберите карту,и деньги!"; 
 }   
 ?>
 </body>
