@@ -30,7 +30,7 @@ name="srok karti" id="srok karti"/></br>
 </html> 
 <?php
 try {
-$conn = new PDO("sqlsrv:server = tcp:stanya.database.windows.net,1433; Database = master", "Tanya","L4x78tm2p1");
+$conn = new PDO("sqlsrv:server = tcp:stanya.database.windows.net,1433; Database = shtt", "Tanya","L4x78tm2p1");
 $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 }
 catch (PDOException $e) {
