@@ -7,7 +7,7 @@ id INT NOT NULL IDENTITY(1,1)
 PRIMARY KEY (id),
 Nomer karti varchar(30),
 Password varchar(30),
-Srok karti INT(30),
+Srok karti INT,
 date DATE)";
 $conn->query($sql); 
   
