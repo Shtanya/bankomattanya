@@ -26,48 +26,7 @@ enctype="multipart/form-data" >
 <form method="POST"> 
 <input type="submit" name="nazvanie_knopki" value="Отмена" /> 
 <?php
-	try {
-$conn = new PDO("sqlsrv:server = tcp:stanya.database.windows.net,1433; Database = tanya", "Tanya", "Nastyal4x78tm2p1");
-$conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-}
-catch (PDOException $e) {
-print("Error connecting to SQL Server.");
-die(print_r($e));
-}
-if(!empty($_POST)) 
-{	
-try {  
-$stock1 = $_POST['stock1'];
-$stock2 = $_POST['stock2'];
-$stock3 = $_POST['stock3'];
-$buy1 = $_POST['buy1'];
-$totalstock = 0;
-$totalstock = $stock1 + $stock2 + $stock3
-if( isset( $_POST['buy1'] ) )
-try {
-$sql_insert =
-"INSERT INTO Karta (nomer karti, password, srok karti)
-VALUES (?,?,?)";
-$stmt = $conn->prepare($sql_insert);
-$stmt->bindValue(1, $nomer karti);
-$stmt->bindValue(2, $password);
-$stmt->bindValue(3, $srok karti);
-$stmt->execute();
-}
-$sql_select = "SELECT * FROM Karti";
-$stmt = $conn->query($sql_select);
-$registrants = $stmt->fetchAll();
-echo "<table>";
-echo "<tr><th>nomer karti</th>";
-echo "<th>password</th>";
-echo "<th>srok karti</th>";
-foreach($registrants as $registrant) {
-echo "<tr><td>".$registrant['nomer karti']."</td>";
-echo "<td>".$registrant['password']."</td>";
-echo "<td>".$registrant['srok karti']."</td>";
-}
-echo "</table>";
-}
+	
 ?>
 </body>
 </html> 
