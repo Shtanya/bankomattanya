@@ -24,7 +24,8 @@ enctype="multipart/form-data" >
 <input type="button" value="Продолжить" onClick='location.href="1.php"'>
 </form>
 <form method="POST"> 
-<input type="submit" name="nazvanie_knopki" value="Отмена" /> 
+<input type="submit" name="submit" value="Отмена"> 
+</form>
 <?php
 if (isset($_POST['submit']))
 { 
