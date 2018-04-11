@@ -29,7 +29,6 @@ enctype="multipart/form-data" >
 <?php
 	try {
 $conn = new PDO("sqlsrv:server = tcp:stanya.database.windows.net,1433; Database = tanya", "Tanya", "Nastyal4x78tm2p1")
-$conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 }
 catch (PDOException $e) {
 print("Error connecting to SQL Server.");
