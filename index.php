@@ -8,17 +8,17 @@
 </head>
 <body>  
 <h1>Система банкомата</h1>
-<form method="post" action="index.php"  
+<form method="post"action="index.php">
 Номер карты <input type="text" 
 name="Nomer karti" id="Nomer karti"/></br> 
-Срок действия карты <input type="text" 
+Срок действия карты<input type="text" 
 name="srok karti" id="srok karti"/></br>
 <FONT color="red">Когда карта просрочена,она блокируется,и денежные средства с нее получить нельзя.</FONT> 
 <p>Введите пароль,после набора нажмите  на <strong>Продолжить</strong> </p>
 <p>Для отказа от операции нажмите  <strong>Отмена</strong> </p>
  <p>
   <label>Ваш пароль:<br></label>
-    <input name="password" type="password" size="15" maxlength="15">
+    <input name="password"type="password"size="15"maxlength="15">
     </p>
 <form>
 <input type="button" value="Продолжить" onClick='location.href="1.php"'>
