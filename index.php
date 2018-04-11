@@ -1,7 +1,8 @@
-<html>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
 <head>
-</html>
-<Title>Registration Form</Title>
+<meta charset="utf-8"> 
+<Title>Система банкомата</Title>
 <body style="color:Black; background-color:#66cc66"> 
 <img src='http://novostroiki-irkutsk.ru/images/logo_sberbank.png'>    
 </head>
@@ -10,7 +11,7 @@
 Номер карты <input type="text" 
 name="Номер карты" id="Номер карты"/></br> 
 Срок действия карты <input type="text" 
-name="Срок действия карты" id="Срок действия карты"/></br>
+name="srok karti" id="Срок действия ка"/></br>
 <FONT color="red">Когда карта просрочена,она блокируется,и денежные средства с нее получить нельзя.</FONT> 
 <p>Введите пароль,после набора нажмите  на <strong>Продолжить</strong> </p>
 <p>Для отказа от операции нажмите  <strong>Отмена</strong> </p>
@@ -27,52 +28,7 @@ enctype="multipart/form-data" >
 <input type="submit" name="submit" value="Отмена"> 
 </form>
 <?php
- try {
-$conn = new PDO("sqlsrv:server = tcp:stanya.database.windows.net,1433; Database = tanya", "Tanya", "Nastyal4x78tm2p1");
-$conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-}
-catch (PDOException $e) {
-print("Error connecting to SQL Server.");
-die(print_r($e));
-}
-if(!empty($_POST))
-{
-try {
-$stock1 = $_POST['stock1'];
-$stock2 = $_POST['stock2'];
-$stock3 = $_POST['stock3'];
-$buy1 = $_POST['buy1'];
-$totalstock = 0;
-$totalstock = $stock1 + $stock2 + $stock3;
-if( isset( $_POST['buy1'] ) )
-try {
-$sql_insert =
-"INSERT INTO Karta (nomer karti, password, srok karti)
-VALUES (?,?,?)";
-$stmt = $conn->prepare($sql_insert);
-$stmt->bindValue(1, $nomer karti);
-$stmt->bindValue(2, $password);
-$stmt->bindValue(3, $srok karti);
-$stmt->execute();
-}
-$sql_select = "SELECT * FROM Karti";
-$stmt = $conn->query($sql_select);
-$registrants = $stmt->fetchAll();
-echo "<table>";
-echo "<tr><th>nomer karti</th>";
-echo "<th>password</th>";
-echo "<th>srok karti</th>";
-foreach($registrants as $registrant) {
-echo "<tr><td>".$registrant['nomer karti']."</td>";
-echo "<td>".$registrant['password']."</td>";
-echo "<td>".$registrant['srok karti']."</td>";
-}
-echo "</table>";
-} 
-if (isset($_POST['submit']))
-{ 
-echo "Вы отменили операцию!"; 
-} 
+ 
 ?>
 </body>
 </html> 
