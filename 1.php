@@ -4,7 +4,7 @@
 </head>
 <body style="color:Black; background-color:#66cc66"> 
 <img src='http://novostroiki-irkutsk.ru/images/logo_sberbank.png'>
-<select name="vibor operacii">
+<select name="Выбор операции">
 <option value="Запросить баланс">Запросить баланс
 <option value="Получить наличные">Получить наличные
 </select>
