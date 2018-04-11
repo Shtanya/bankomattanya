@@ -30,23 +30,22 @@ enctype="multipart/form-data" >
 </body>
 </html> 
  <?php
-try { $conn = new PDO("sqlsrv:server = tcp:karl.database.windows.net,1433; Database = basa", "Anastasiya", "L4x78tm2p1");
+$conn = new PDO("sqlsrv:server = tcp:stanya.database.windows.net,1433; Database = bankomat", "Tanya","L4x78tm2p1");
 $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 }
 catch (PDOException $e) {
 print("Error connecting to SQL Server.");
 die(print_r($e));
 }
-$sql_select = "SELECT * FROM registration_tbl";
+$sql_select = "SELECT * FROM Karta";
 $stmt = $conn->query($sql_select);
 if(isset($_POST["submit"])) {
 if ($stmt->fetchColumn() > 0) {
 foreach ($n as $row) {
 session_start();
-$_SESSION['familiya'] = $row["familiya"];
-$_SESSION['imya'] = $row["imya"];
-$_SESSION['otchestvo'] = $row["otchestvo"]; 
-$_SESSION['tel'] = $row["tel"];
+$_SESSION['Nomer karti'] = $row["Nomer karti"];
+$_SESSION['Srok karti'] = $row["Srok karti"];
+$_SESSION['Password'] = $row["Password"]; 
 }
 }
 } 
