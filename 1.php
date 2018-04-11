@@ -8,8 +8,8 @@
 <select name="Выбор операции">
 <option value="Запросить баланс">Запросить баланс
 <option value="Получить наличные">Получить наличные
-</select>
-  
+</select><input type="submit" name="submit" value="На экране"> 
+</form>
 <form method="post" action="1.php" 
 enctype="multipart/form-data" >
   </form>
