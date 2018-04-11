@@ -16,12 +16,12 @@ enctype="multipart/form-data" >
 </form>
 <form>
 <input type="submit" name="submit" value="На экране"> 
-</form>  
+</form>
 <?php
 if (isset($_POST['submit']))
 { 
-echo "Остаток на счете:100000 РУБ"; 
-}   
+echo "На вашем счете:100000 РУБ!"; 
+} 
 ?>
 </body>
 </html>
