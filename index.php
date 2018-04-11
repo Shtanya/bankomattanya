@@ -6,7 +6,7 @@
 <img src='http://novostroiki-irkutsk.ru/images/logo_sberbank.png'>    
 </head>
 <body>  
-</html> 
+</html>\\ 
 <h1>Система банкомата</h1> 
 Номер карты <input type="text" 
 name="Номер карты" id="Номер карты"/></br> 
