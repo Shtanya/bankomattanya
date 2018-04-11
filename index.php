@@ -28,7 +28,7 @@ enctype="multipart/form-data" >
 <?php
 if (isset($_POST['submit']))
 { 
-echo "Заберите карту!"; 
+echo "Вы отменили операцию!"; 
 } 
 ?>
 </body>
