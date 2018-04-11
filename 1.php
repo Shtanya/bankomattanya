@@ -9,6 +9,7 @@
 <option value="Запросить баланс">Запросить баланс
 <option value="Получить наличные">Получить наличные
 </select>
+<form>
 <input type="submit" name="submit" value="На экране"> 
 </form>
 <form method="post" action="1.php" 
