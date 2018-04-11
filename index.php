@@ -26,7 +26,10 @@ enctype="multipart/form-data" >
 <form method="POST"> 
 <input type="submit" name="nazvanie_knopki" value="Отмена" /> 
 <?php
-	
+if (isset($_POST['submit']))
+{ 
+echo "Заберите карту!"; 
+} 
 ?>
 </body>
 </html> 
