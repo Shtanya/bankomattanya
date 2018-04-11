@@ -29,7 +29,8 @@ enctype="multipart/form-data" >
 </form>
 </body>
 </html> 
- <?php
+<?php
+try {
 $conn = new PDO("sqlsrv:server = tcp:stanya.database.windows.net,1433; Database = bankomat", "Tanya","L4x78tm2p1");
 $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 }
