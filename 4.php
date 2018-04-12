@@ -11,13 +11,8 @@ enctype="multipart/form-data" >
 <div class="header">  
 <a href="\index.php"> На главную</a></li> 
 </div>
-<input type="submit" name="submit" value="Забрать карту"> 
-</form>
+<button onclick="alert('Пожалуйста,заберите деньги и карту');">Забрать карту</button>
 <?php
-if (isset($_POST['submit']))
-{ 
-echo "Пожалуйста,заберите карту!"; 
-} 
 ?>
 </body>
 </html>
