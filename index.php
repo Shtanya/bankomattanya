@@ -25,6 +25,7 @@ name="srokkarti" id="srokkarti"/></br>
 </form>
 <div id="win" style="display:none;">
 <button onClick="getElementById('win').removeAttribute('style');" type="button">Модальное окно</button>
+<div/> 
 </body>
 </html> 
 <?php
