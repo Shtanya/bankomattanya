@@ -23,7 +23,7 @@ name="srokkarti" id="srokkarti"/></br>
 <form>
 <input type="button" value="Продолжить" onClick='location.href="1.php"'>
 </form>
-<button onclick="alert('Вы завершили,обслуживание.Пожалуйста заберите карту');">Завершить обслуживание</button>
+<button onclick="alert('Вы завершили,обслуживание.Пожалуйста,заберите карту');">Завершить обслуживание</button>
 <div/> 
 </body>
 </html> 
