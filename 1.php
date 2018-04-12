@@ -14,9 +14,7 @@ enctype="multipart/form-data" >
 </form>
 <input type="button" value="Далее" onClick='location.href="2.php"'>
 </form>
-<form method="POST">
-<input type="submit" name="submit" value="На экране"> 
-</form>
+<button onclick="alert('Ваш баланс:6500 РУБ.');">На экране</button>
 <?php
 if (isset($_POST['submit']))
 { 
