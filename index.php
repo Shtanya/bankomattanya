@@ -24,13 +24,10 @@ name="srokkarti" id="srokkarti"/></br>
 <input type="button" value="Продолжить" onClick='location.href="1.php"'>
 </form>
 <div onclick="show('none')" id="wrap"></div>
-<!-- Всплывающее окно-->
 <div id="window">
-<!-- Крестик-->
 <span class="close" onclick="show('none')">X</span>
 здесь текст, картинки и т.д
 </div>
-<!--Кнопка-->
 <button onclick="show('block')">Показать окно</button>
 </form>
 </body>
