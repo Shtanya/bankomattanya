@@ -16,10 +16,6 @@ enctype="multipart/form-data" >
 </form>
 <button onclick="alert('Ваш баланс:6500 РУБ.');">На экране</button>
 <?php
-if (isset($_POST['submit']))
-{ 
-echo "На вашем счете:100000 РУБ!"; 
-} 
 ?>
 </body>
 </html>
