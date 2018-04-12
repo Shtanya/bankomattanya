@@ -8,8 +8,7 @@ PRIMARY KEY(id),
 Nomerkarti varchar(30),
 Password varchar(30),
 Srokkarti INT)";
-$conn->query($sql); 
-  
+$conn->query($sql);  
 echo "<h3>Таблица создана!</h3>";
 }
 catch (PDOException $e) {
@@ -17,3 +16,4 @@ print("Ошибка подключения к SQL Server.");
 die(print_r($e));
 }
 ?>
+echo "<h3>Таблица создана!</h3>";
