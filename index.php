@@ -15,7 +15,7 @@ name="Nomerkarti" id="Nomerkarti"/></br>
 name="srokkarti" id="srokkarti"/></br>
 <FONT color="red">Когда карта просрочена,она блокируется,и денежные средства с нее получить нельзя.</FONT> 
 <p>Введите пароль,после набора нажмите  на <strong>Продолжить</strong> </p>
-<p>Для отказа от операции нажмите  <strong>Отмена</strong> </p>
+<p>Для отказа от операции нажмите  <strong>Завершить обслуживание</strong> </p>
  <p>
   <label>Ваш пароль:<br></label>
     <input name="password"type="password"size="15"maxlength="15">
