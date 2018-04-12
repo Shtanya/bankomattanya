@@ -11,13 +11,8 @@ enctype="multipart/form-data" >
 <form>  
 <input type="button" value="Да" onClick='location.href="4.php"'>
 </form>
-<form method="POST">  
-<input type="submit" name="submit" value="Нет"> 
+<button onclick="alert('Пожалуйста,заберите карту и деньги!');">Нет</button>
 <?php
-if (isset($_POST['submit']))
-{ 
-echo "Пожалуйста,заберите карту,и деньги!"; 
-}   
 ?>
 </body>
 </html>
