@@ -1,6 +1,6 @@
 <?php
 try {
-$conn = new PDO("sqlsrv:server = tcp:stanya.database.windows.net,1433; Database = shtt", "tanya", "Sobachka1";
+$conn = new PDO("sqlsrv:server = tcp:stanya.database.windows.net,1433; Database = shtt", "Tanya", "Sobachka1";
 $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 $sql = "CREATE TABLE Karta(
 id INT NOT NULL IDENTITY(1,1)
