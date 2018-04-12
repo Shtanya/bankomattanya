@@ -23,6 +23,8 @@ name="srokkarti" id="srokkarti"/></br>
 <form>
 <input type="button" value="Продолжить" onClick='location.href="1.php"'>
 </form>
+<div id="win" style="display:none;">
+<button onClick="getElementById('win').removeAttribute('style');" type="button">Модальное окно</button>
 </body>
 </html> 
 <?php
