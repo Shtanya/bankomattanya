@@ -9,9 +9,11 @@
 <form method="post" action="3.php" 
 enctype="multipart/form-data" >
 <form>  
-<input type="button" value="Да" onClick='location.href="4.php"'>
+<input type="button" value="Продолжить с печатью чека" onClick='location.href="4.php"'>
 </form>
-<button onclick="alert('Пожалуйста,заберите карту и деньги!');">Нет</button>
+<form>  
+<input type="button" value="Продолжить без печати чека" onClick='location.href="4.php"'>
+</form> 
 <?php
 ?>
 </body>
